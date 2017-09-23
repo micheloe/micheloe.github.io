@@ -1,0 +1,307 @@
+/* Nagelstudio Boxmeer */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Playball');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+body {
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+body {
+    font-family:  "Montserrat", Arial, Verdana, sans-serif;
+    font-size: 1em;
+    line-height: 1.7;
+    background: #fff;
+	color: #000;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: bottom right;
+}
+
+a {
+    text-decoration: none;   
+    outline: 0;
+    color: #f99;
+}
+a:hover {
+    color: #c66;
+}
+
+/* Title / logo CSS */
+#title {
+    position: absolute;
+    width: 100%;
+}
+
+#title h1 {
+    width: 100%;
+    font-family: "Playball", cursive;
+    font-size: 100px;
+    text-align: center;
+    /*text-shadow: 2px 2px 2px #aaa;*/
+	color:  #f99;
+    background-image: -webkit-linear-gradient(92deg,#ff9999,#cc6666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+}
+
+.logo {
+    float: top;
+    width: 140px;
+    height: 65px;
+}
+
+object.logo svg g path {
+    fill: #c66;
+}
+
+/* Content CSS */
+#content {
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	width: 400px;
+	background: #fff;
+	padding: 1em;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-radius: 3px;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.05);
+	max-width: 90%;
+	box-sizing: border-box;
+}
+
+#content .intro h1,
+#content .opentimes h1,
+#content .prices h1 {
+    font-size: 1.5em;
+    line-height: 1;
+	font-weight: 400;
+	color:  #f99;
+}
+
+#content .intro,
+#content .opentimes,
+#content .footer {
+	margin: 2em 0;
+}
+
+#content .intro p + p {
+    margin: 1em 0;
+}
+
+/* Content Opening times CSS */
+#content .opentimes table tr td {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#content .opentimes table tr td:first-child {
+    text-align: right;
+}
+
+/* Content Footer CSS */
+#content .footer a {
+	display: block;
+    padding-left: 30px;
+    margin-bottom: 5px;
+}
+
+#content .footer a > span {
+    /*margin-left: 10px;*/    
+}
+
+#content .footer a > span {
+    float: right;
+    width: 90%;
+    margin-left: 10px;
+    
+}
+
+#content .footer .icon #icon-location {
+	width: 7px;
+	height: 15px;
+}
+
+#content .footer a .icon {
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+}
+
+/*
+#content .footer .icon path {
+    fill: #f99;
+}
+
+#content .footer .icon svg {
+    fill: #f99;
+}
+*/
+
+#content .footer a:hover {
+	color: #c66;
+}
+#content .footer .social {
+    margin: 2em 0;
+	margin-bottom: 0;
+}
+
+/* prijslijst CSS */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h1 {
+    font-family: "Playball", cursive;
+    margin-top: 0;
+    color: #f99;
+    font-size: 70px;
+    text-align: center;
+    background-image: -webkit-linear-gradient(92deg,#ff9999,#cc6666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+}
+
+.popup .logo {
+    float: top;
+    width: 120px;
+    height: 45px;
+}
+
+.popup h2 {
+    color: #f99;
+    font-size: 1.5em;
+    line-height: 1;
+	font-weight: 400;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #f99;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    padding-bottom: 2em;
+}
+
+#pricelist .popup table {
+    width: 55%;
+    margin-top: 1em;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+#pricelist .popup table th {
+    width: 50%;
+    text-align: left;
+    color: #f99;
+}
+
+#pricelist .popup table th,
+#pricelist .popup table td {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#pricelist .popup table td.price {
+    text-align: right;
+}
