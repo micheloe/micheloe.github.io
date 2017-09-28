@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css?v00000000" type="text/css" />
     <link rel="stylesheet" href="animate.css?v00000000" type="text/css" />
     <link rel="shortcut icon" href="favicon.ico?v00000000" />
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
     <script>
         <!--
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -17,9 +22,26 @@
         ga('create', 'UA-XXXXXXXX-XX', 'auto');
         ga('send', 'pageview');
         -->
-    </script>	
+    </script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            //alert ("done");
+            $('body').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+                function() {
+                    //$('body').css('opacity', '1');
+                }
+            );
+            $('body').css('-webkit-animation', 'fadein 4s');
+            $('body').css('-moz-animation', 'fadein 4s');
+            $('body').css('-ms-animation', 'fadein 4s');
+            $('body').css('animation', 'fadein 4s');
+        });
+    </script>
 </head>
 <body>
+<div class="background">
+    <img src="background.jpg">
+</div>
 <div id="title" class="animated zoomIn">
     
     <h1>
@@ -28,7 +50,7 @@
 </div>
 <div id="content" class="animated bounceInUp">
     <div class="intro">
-        <!-- <img src="logo.png" alt="Nagelstudio Boxmeer"> -->
+        <!-- <img src="logo.png" alt="Nagelstudio Boxmeer" /> -->
         <h1>Welkom!</h1>
         <p>
             Nagelstudio Boxmeer is gespecialiseerd in de styling en verzorging van uw nagels.
@@ -52,7 +74,7 @@
             <tr><td>donderdag</td><td>:<td><td>10:00 - 18:00</td></tr>
             <tr><td>vrijdag</td><td>:<td><td>10:00 - 20:00</td></tr>
             <tr><td>zaterdag</td><td>:<td><td>10:00 - 18:00</td></tr>
-            <tr><td>zondag</td><td>:<td><td>op koopzondagen*</td></tr>
+            <tr><td>zondag</td><td>:<td><td>op koopzondagen</td></tr>
         </table>
     </div>
     <div class="footer">
