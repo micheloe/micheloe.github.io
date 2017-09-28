@@ -358,3 +358,21 @@ object.logo svg g path {
 #pricelist .popup table td.price {
     text-align: right;
 }
+
+@media screen and (max-width: 900px) {
+
+	#content {
+		position: relative;
+		bottom: auto;
+		left: auto;
+		margin: 1em auto;
+		padding: 20px;
+		font-size: 0.9em;
+	}
+	#content .intro,
+	#content .prices,
+	#content .opentimes,
+	#content .footer {
+		margin: 1em 0;
+	}
+}
