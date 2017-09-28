@@ -23,20 +23,6 @@
         ga('send', 'pageview');
         -->
     </script>
-    <script type="text/javascript">
-        $(window).load(function() {
-            //alert ("done");
-            $('body').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
-                function() {
-                    //$('body').css('opacity', '1');
-                }
-            );
-            $('body').css('-webkit-animation', 'fadein 4s');
-            $('body').css('-moz-animation', 'fadein 4s');
-            $('body').css('-ms-animation', 'fadein 4s');
-            $('body').css('animation', 'fadein 4s');
-        });
-    </script>
 </head>
 <body>
 <div class="background">
@@ -148,4 +134,18 @@
 	</div>
 </div>
 </body>
+<script type="text/javascript">
+    $(window).load(function() {
+        //alert ("done");
+        $('body').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+            function() {
+                //$('body').css('opacity', '1');
+            }
+        );
+        $('body').css('-webkit-animation', 'fadein 4s');
+        $('body').css('-moz-animation', 'fadein 4s');
+        $('body').css('-ms-animation', 'fadein 4s');
+        $('body').css('animation', 'fadein 4s');
+    });
+</script>
 </html>
