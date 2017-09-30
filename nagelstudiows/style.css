@@ -388,14 +388,14 @@ object.logo svg g path {
     }
     
     #title h1 {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .logo {
         float: top;
         margin: 0px;
-        width: 120px;
-        height: 45px;
+        width: 130px;
+        height: 55px;
     }
     
 	#content {
