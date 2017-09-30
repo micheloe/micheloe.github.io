@@ -207,6 +207,7 @@ object.logo svg g path {
 
 /* Content Opening times CSS */
 #content .opentimes table tr td {
+    font-size: 100%;
     padding-left: 2px;
     padding-right: 2px;
 }
