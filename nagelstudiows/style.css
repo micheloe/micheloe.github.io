@@ -162,15 +162,17 @@ object.logo svg g path {
 /* Content CSS */
 #content {
     /* position: fixed; */
-    margin-left: 70%;
+    /* margin-left: 70%; */
+    float: right;
     margin-bottom: 5%;
     top: 20%;
 	/* right: 30px; */
-	/* right: 2%; */
+	margin-right: 2%;
+	right: 5%;
 	/* bottom: 30px; */
 	bottom: 5%;
 	/* width: 400px; */
-	width: 25%;
+	width: 400px;
 	min-width: 322px;
 	background: #fff;
 	padding: 1em;
@@ -368,7 +370,11 @@ object.logo svg g path {
         margin: 0px;
         width: 130px;
         height: 55px;
-    }  
+    }
+    
+    #content {
+        margin-left: 65%;
+    }
 }
 
 /* Alternative layout for mobile devices */
@@ -392,6 +398,7 @@ object.logo svg g path {
     }
     
 	#content {
+	    float: none;
 		position: relative;
 		bottom: auto;
 		left: auto;
