@@ -244,7 +244,7 @@ object.logo svg g path {
 
 #content .footer .address table tr td:first-child,
 #content .footer .social table tr td:first-child {
-    padding-left: 3em;
+    padding-left: 2em;
     padding-right: 0.5em;
 }
 
@@ -398,7 +398,7 @@ object.logo svg g path {
     }
     
     #title h1 {
-        font-size: 4em;
+        font-size: 2em;
     }
 
     .logo {
@@ -424,7 +424,7 @@ object.logo svg g path {
     }
 
     .popup h1 {
-        font-size: 3em;
+        font-size: 1.5em;
     }
 
     .popup .logo {
