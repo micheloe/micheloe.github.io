@@ -372,7 +372,8 @@ object.logo svg g path {
 }
 
 /* Alternative layout for mobile devices */
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) { */
+@media screen and (orientation:portrait) {
 
     body {
         padding: 1em 0;
