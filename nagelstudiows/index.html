@@ -41,7 +41,7 @@
         </p>
         <p>
             Wij vertellen U graag meer over ons assortiment, onder het genot van een kopje koffie of thee.
-            U bent met en zonder afspraak van harte welkom!
+            U bent met &eacute;n zonder afspraak van harte welkom!
         </p>
     </div>
     <div class="prices">
@@ -62,27 +62,41 @@
     </div>
     <div class="footer">
         <div class="address">
-            <a href="https://goo.gl/maps/1iSdAdcrRhJ2" title="Adres" class="location" target="TOP">
-                <object data="location.svg" class="icon" type="image/svg+xml"><!-- Location --></object>
-                <div>
-                Kloostertuin 7<br />
-                5831 JS Boxmeer
-                </div>
-            </a>
+            <div class="row">
+                <a href="https://goo.gl/maps/1iSdAdcrRhJ2" title="Adres" class="location" target="TOP">
+                    <div class="cell">
+                        <object data="location.svg" class="icon" type="image/svg+xml"><!-- Location --></object>
+                    </div>
+                    <div class="cell">
+                        Kloostertuin 7<br />
+                        5831 JS Boxmeer
+                    </div>
+                </a>
+            </div>
         </div>
         <div class="social">
-            <a href="mailto:info@nagelstudioboxmeer.nl" title="E-mail" class="email">
-                <object data="email.svg" class="icon" type="image/svg+xml"><!-- Email --></object>
-                <div>info@nagelstudioboxmeer.nl</div>
-            </a>
-            <a href="tel:+31619522274" title="Telefoon" class="phone">
-                <object data="phone.svg" class="icon" type="image/svg+xml"><!-- Phone --></object>
-                <div>06 195 222 74</div>
-            </a>
-            <a href="https://www.facebook.com/boxmeer.nagelstudio" class="facebook" title="Facebook" target="TOP">
-                <object data="facebook.svg" class="icon" type="image/svg+xml"><!-- Facebook --></object>
-                <div>Facebook</div>
-            </a>
+            <div class="row">
+                <a href="mailto:info@nagelstudioboxmeer.nl" title="E-mail" class="email">
+                    <div class="cell">
+                        <object data="email.svg" class="icon" type="image/svg+xml"><!-- Email --></object>
+                    </div>
+                    <div class="cell">info@nagelstudioboxmeer.nl</div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="tel:+31619522274" title="Telefoon" class="phone">
+                    <div class="cell">
+                        <object data="phone.svg" class="icon" type="image/svg+xml"><!-- Phone --></object>
+                    </div>
+                    <div class="cell">06 195 222 74</div>
+                </a>
+            <div class="row">
+                <a href="https://www.facebook.com/boxmeer.nagelstudio" class="facebook" title="Facebook" target="TOP">
+                    <div class="cell">
+                        <object data="facebook.svg" class="icon" type="image/svg+xml"><!-- Facebook --></object>
+                    </div>
+                    <div class="cell">Facebook</div>
+                </a>
         </div>
     </div>
 </div>
@@ -135,6 +149,7 @@
 <script type="text/javascript">
 
     $(window).load(function() {
+        /*
         $('body').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
             function() {
                 $('body').css('opacity', '1');
@@ -144,6 +159,7 @@
         $('body').css('-moz-animation', 'fadein 4s');
         $('body').css('-ms-animation', 'fadein 4s');
         $('body').css('animation', 'fadein 4s');
+        */
         
         $('.open-pricelist').click(function() {
             alert('Done!');
