@@ -408,7 +408,7 @@ object.logo svg g path {
         top: 20%;
 		margin: 1em auto;
 		padding: 20px;
-		font-size: 0.9em;
+		font-size: 1em;
 	}
 	
 	#content .intro,
@@ -424,15 +424,7 @@ object.logo svg g path {
     }
 
     .popup h1 {
-        font-family: "Playball", cursive;
-        margin-top: 0;
-        color: #f99;
         font-size: 2em;
-        text-align: center;
-        background-image: -webkit-linear-gradient(92deg,#ff9999,#cc6666);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-animation: hue 60s infinite linear;
     }
 
     .popup .logo {
@@ -442,13 +434,13 @@ object.logo svg g path {
     }
 
     .popup h2 {
-        font-size: 1.0em;
+        font-size: 1.1em;
     }
     
     #pricelist .popup table {
         width: 100%;
         margin-top: 1em;
-        font-size: 0.8em;
+        font-size: 1em;
         line-height: 1.3;
     }
 }
