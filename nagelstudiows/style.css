@@ -199,6 +199,10 @@ object.logo svg g path {
 }
 
 /* Content Opening times CSS */
+#content .opentimes table {
+    font-size: 1em;
+}
+
 #content .opentimes table tr td {
     padding-left: 2px;
     padding-right: 2px;
@@ -214,15 +218,6 @@ object.logo svg g path {
     padding-left: 30px;
     margin-bottom: 5px;
 }
-
-/*
-#content .footer a > p {
-    float: right;
-    width: 90%;
-    margin-left: 10px;
-    
-}
-*/
 
 #content .footer .icon #icon-location {
 	width: 7px;
@@ -253,6 +248,7 @@ object.logo svg g path {
 #content .footer .social .cell {
     display: table-cell;
     padding-left: 10px;
+    font-size: 1em;
 }
 
 /*
@@ -365,6 +361,7 @@ object.logo svg g path {
 @media screen and (max-height: 768px) {
 	body {
         padding: 1em 0;
+        font-size: 1em;
     }
     #title h1 {
         font-size: 4em;
