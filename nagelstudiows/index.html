@@ -90,6 +90,7 @@
                     </div>
                     <div class="cell">06 195 222 74</div>
                 </a>
+            </div>
             <div class="row">
                 <a href="https://www.facebook.com/boxmeer.nagelstudio" class="facebook" title="Facebook" target="TOP">
                     <div class="cell">
@@ -97,6 +98,7 @@
                     </div>
                     <div class="cell">Facebook</div>
                 </a>
+            </div>
         </div>
     </div>
 </div>
@@ -134,10 +136,10 @@
 		            <tr><td>Gellak verwijderen</td><td class="price">&euro;10</td><td>Oksels</td><td class="price">&euro;20</td></tr>
 		            <tr><th colspan="2">OVERIGE</th></tr>
 		            <tr><td>Kunstnagel verwijderen</td><td class="price">&euro;12</td></tr>
-		            <tr><td>Cadeaubon</td><td class="price">vanaf &euro;15</td></tr>
-		            <tr><td>Steentjes</td><td class="price">vanaf &euro;0,25</td></tr>
-		            <tr><td>Nails art</td><td class="price">vanaf &euro;2</td></tr>
-		            <tr><td>Nagelreparatie</td><td class="price">vanaf &euro;4</td></tr>
+		            <tr><td>Cadeaubon</td><td class="price">v.a. &euro;15</td></tr>
+		            <tr><td>Steentjes</td><td class="price">v.a. &euro;0,25</td></tr>
+		            <tr><td>Nails art</td><td class="price">v.a. &euro;2</td></tr>
+		            <tr><td>Nagelreparatie</td><td class="price">v.a. &euro;4</td></tr>
 		            <tr><td>Chrome nagels</td><td class="price">&euro;10</td></tr>
 		        </table>
 		    </div>
@@ -148,21 +150,19 @@
 </body>
 <script type="text/javascript">
 
-    $(window).load(function() {
-        /*
-        $('body').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+    $(window).on('load', function() {
+        $('body').one('webkitAnimationEnd oanimationend oAnimationEnd msAnimationEnd animationend',
             function() {
                 $('body').css('opacity', '1');
             }
         );
-        $('body').css('-webkit-animation', 'fadein 4s');
-        $('body').css('-moz-animation', 'fadein 4s');
-        $('body').css('-ms-animation', 'fadein 4s');
-        $('body').css('animation', 'fadein 4s');
-        */
+        $('body').css('-webkit-animation', 'fadein 2s');
+        $('body').css('-moz-animation', 'fadein 2s');
+        $('body').css('-ms-animation', 'fadein 2s');
+        $('body').css('-o-animation', 'fadein 2s');
+        $('body').css('animation', 'fadein 2s');
         
         $('.open-pricelist').click(function() {
-            alert('Done!');
             $('body').css('overflow-y', 'hidden');
         });
         
@@ -170,8 +170,7 @@
             $('body').css('overflow-y', 'scroll');
         });
         
-    });
-    
+    });  
 
 </script>
 </html>
