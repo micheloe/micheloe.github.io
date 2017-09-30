@@ -163,6 +163,7 @@ object.logo svg g path {
 #content {
     /* position: fixed; */
     /* margin-left: 70%; */
+	opacity: 0.9;
     float: right;
     margin-bottom: 5%;
     top: 20%;
@@ -404,7 +405,6 @@ object.logo svg g path {
 		left: auto;
 		right: auto;
 		width: 75%;
-		opacity: 0.9;
         top: 20%;
 		margin: 1em auto;
 		padding: 20px;
