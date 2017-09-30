@@ -372,6 +372,10 @@ object.logo svg g path {
     #content {
         margin-left: 65%;
     }
+
+    .popup {
+        width: 80%;
+    }
 }
 
 /* Alternative layout for mobile devices */
