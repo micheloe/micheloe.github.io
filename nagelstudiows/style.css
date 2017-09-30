@@ -199,7 +199,7 @@ object.logo svg g path {
 }
 
 /* Content Opening times CSS */
-#content .opentimes table {
+#content .opentimes table tr td {
     font-size: 1em;
 }
 
