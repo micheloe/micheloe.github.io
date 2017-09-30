@@ -213,7 +213,7 @@ object.logo svg g path {
     margin-bottom: 5px;
 }
 
-#content .footer a > span {
+#content .footer a > div {
     float: right;
     width: 90%;
     margin-left: 10px;
@@ -236,7 +236,6 @@ object.logo svg g path {
 }
 #content .footer .social {
     margin: 2em 0;
-	/* margin-bottom: 0; */
 }
 
 /* Prijslijst CSS */
