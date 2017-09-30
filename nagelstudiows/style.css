@@ -292,7 +292,7 @@ object.logo svg g path {
     font-family: "Playball", cursive;
     margin-top: 0;
     color: #f99;
-    font-size: 70px;
+    font-size: 4em;
     text-align: center;
     background-image: -webkit-linear-gradient(92deg,#ff9999,#cc6666);
     -webkit-background-clip: text;
