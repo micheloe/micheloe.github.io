@@ -171,10 +171,6 @@ object.logo svg g path {
 	min-width: 322px;
 	background: #fff;
 	padding: 1em;
-	/*
-	padding-top: 1em;
-	padding-bottom: 1em;
-	*/
 	border-radius: 3px;
 	box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.30);
 	max-width: 90%;
@@ -218,10 +214,6 @@ object.logo svg g path {
 }
 
 #content .footer a > span {
-    /*margin-left: 10px;*/    
-}
-
-#content .footer a > span {
     float: right;
     width: 90%;
     margin-left: 10px;
@@ -239,22 +231,12 @@ object.logo svg g path {
 	vertical-align: middle;
 }
 
-/*
-#content .footer .icon path {
-    fill: #f99;
-}
-
-#content .footer .icon svg {
-    fill: #f99;
-}
-*/
-
 #content .footer a:hover {
 	color: #c66;
 }
 #content .footer .social {
     margin: 2em 0;
-	margin-bottom: 0;
+	/* margin-bottom: 0; */
 }
 
 /* Prijslijst CSS */
@@ -411,12 +393,10 @@ object.logo svg g path {
 		width: 75%;
         top: 20%;
 		margin: 1em auto;
-		padding: 20px;
 		font-size: 1em;
 	}
 	
     .popup {
-        /* margin: 30px auto; */
         width: 90%;
     }
 
