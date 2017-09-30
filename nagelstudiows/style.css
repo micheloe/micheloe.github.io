@@ -244,8 +244,7 @@ object.logo svg g path {
 
 #content .footer .address table tr td:first-child,
 #content .footer .social table tr td:first-child {
-    padding-left: 1em;
-    padding-right: 0.5em;
+    padding: 0 0.5em;
 }
 
 #content .footer a:hover {
@@ -287,7 +286,7 @@ object.logo svg g path {
     margin: 15px auto;
     background: #fff;
     border-radius: 5px;
-    width: 65%;
+    width: 45%;
     position: relative;
     transition: all 5s ease-in-out;
 }
@@ -338,6 +337,7 @@ object.logo svg g path {
     padding-bottom: 2em;
 }
 
+/*
 #pricelist .popup table {
     width: 60%;
     margin-top: 1em;
@@ -363,6 +363,55 @@ object.logo svg g path {
 #pricelist .popup table td.price {
     text-align: right;
 }
+*/
+
+#pricelist .popup .list .content  {
+    display: table;
+    line-height: 1.3;
+    width: 90%;
+}
+
+#pricelist .popup .list .content .set {
+    width: 45%;
+}
+
+#pricelist .popup .list .content .set:nth-child(odd) {
+    float: left;
+}
+#pricelist .popup .list .content .set:nth-child(even) {
+    float: right;
+}
+
+#pricelist .popup .list .content .set .setrow {
+    width: 100%;
+}
+
+#pricelist .popup .list .content .set .setrow .hitem {
+    width: 100%;
+    display: table-cell;
+    text-align: left;
+    padding-top: 0.7em;
+    color: #f99;
+}
+
+#pricelist .popup .list .content .set .setrow .ditem {
+    text-align: left;
+    padding-left: 1em;
+}
+
+#pricelist .popup .list .content .set .setrow .sub1 {
+    text-align: left;
+    padding-left: 2em;
+}
+
+#pricelist .popup .list .content .set .setrow .ditem:nth-child(odd) {
+    float: left;
+}
+
+#pricelist .popup .list .content .set .setrow .ditem:nth-child(even) {
+    text-align: right;
+}
+
 
 /* Adjusted layout for smaller screens */
 @media screen and (max-height: 768px) {
@@ -377,7 +426,7 @@ object.logo svg g path {
         float: top;
         margin: 0px;
         width: 130px;
-        height: 55px;
+        height: 60px;
     }
     
     #content {
@@ -404,8 +453,8 @@ object.logo svg g path {
     .logo {
         float: top;
         margin: 0px;
-        width: 110px;
-        height: 35px;
+        width: 60px;
+        height: 28px;
     }
     
 	#content {
@@ -424,22 +473,65 @@ object.logo svg g path {
     }
 
     .popup h1 {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 
     .popup .logo {
         float: top;
-        width: 120px;
-        height: 45px;
+        width: 60px;
+        height: 28px;
     }
 
     .popup h2 {
         font-size: 1.1em;
     }
     
-    #pricelist .popup table {
-        width: 100%;
-        margin-top: 1em;
+    #pricelist .popup .list .content  {
+        display: table;
         line-height: 1.3;
+        width: 80%;
+    }
+
+    #pricelist .popup .list .content .set {
+        width: 90%;
+    }
+
+    #pricelist .popup .list .content .set:nth-child(odd) {
+        float: none;
+    }
+    #pricelist .popup .list .content .set:nth-child(even) {
+        float: none;
+    }
+
+    #pricelist .popup .list .content .set {
+        display: table-row;
+    }
+    
+    #pricelist .popup .list .content .set .setrow {
+        width: 100%;
+    }
+
+    #pricelist .popup .list .content .set .setrow .hitem {
+        width: 100%;
+        text-align: left;
+        padding-top: 0.7em;
+        color: #f99;
+    }
+
+    #pricelist .popup .list .content .set .setrow .ditem {
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    #pricelist .popup .list .content .set .setrow .sub1 {
+        padding-left: 2em;
+    }
+
+    #pricelist .popup .list .content .set .setrow .ditem:nth-child(odd) {
+        float: left;
+    }
+
+    #pricelist .popup .list .content .set .setrow .ditem:nth-child(even) {
+        text-align: right;
     }
 }
