@@ -244,7 +244,7 @@ object.logo svg g path {
 
 #content .footer .address table tr td:first-child,
 #content .footer .social table tr td:first-child {
-    padding-left: 2em;
+    padding-left: 1em;
     padding-right: 0.5em;
 }
 
