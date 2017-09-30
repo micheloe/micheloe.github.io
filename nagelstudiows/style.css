@@ -217,42 +217,47 @@ object.logo svg g path {
 }
 
 /* Content Footer CSS */
+/*
 #content .footer a {
 	display: block;
     padding-left: 30px;
     margin-bottom: 5px;
-}
+}*/
 
 #content .footer .icon #icon-location {
 	width: 7px;
 	height: 15px;
 }
 
+/*
 #content .footer a .icon {
 	width: 15px;
 	height: 15px;
 	vertical-align: middle;
+}*/
+
+#content .footer .icon {
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+}
+
+#content .footer .address table tr td:first-child,
+#content .footer .social table tr td:first-child {
+    padding-left: 1em;
+    padding-right: 0.5em;
 }
 
 #content .footer a:hover {
 	color: #c66;
 }
 
-#content .footer .address,
-#content .footer .social {
-    display: table;
-}
-
-#content .footer .address .row,
-#content .footer .social .row {
-    display: table-row;
-}
-
-#content .footer .address .cell,
-#content .footer .social .cell {
-    display: table-cell;
+/*
+#content .footer .address td,
+#content .footer .social td {
     padding-left: 10px;
 }
+*/
 
 /*
 #content .footer .social {
