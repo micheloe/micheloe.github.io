@@ -276,10 +276,10 @@ object.logo svg g path {
 }
 
 .popup {
-    margin: 30px auto;
+    margin: 15px auto;
     background: #fff;
     border-radius: 5px;
-    width: 60%;
+    width: 65%;
     position: relative;
     transition: all 5s ease-in-out;
 }
@@ -347,6 +347,10 @@ object.logo svg g path {
 #pricelist .popup table td {
     padding-left: 1em;
     padding-right: 1em;
+}
+
+#pricelist .popup table td {
+    padding-left: 2em;
 }
 
 #pricelist .popup table td.price {
@@ -417,13 +421,13 @@ object.logo svg g path {
     }
 
     .popup h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .popup .logo {
         float: top;
-        width: 100px;
-        height: 25px;
+        width: 120px;
+        height: 45px;
     }
 
     .popup h2 {
