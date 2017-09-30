@@ -25,9 +25,6 @@
     </script>
 </head>
 <body>
-<div class="background">
-    <img src="background.jpg">
-</div>
 <div id="title" class="animated zoomIn">
     
     <h1>
@@ -40,16 +37,16 @@
         <h1>Welkom!</h1>
         <p>
             Nagelstudio Boxmeer is gespecialiseerd in de styling en verzorging van uw nagels.
-            Ook kunt U bij ons terecht voor een pedicure.
+            Ook kunt U bij ons terecht voor een spa pedicure.
         </p>
         <p>
             Wij vertellen U graag meer over ons assortiment, onder het genot van een kopje koffie of thee.
-            U bent van harte welkom!
+            U bent met en zonder afspraak van harte welkom!
         </p>
     </div>
     <div class="prices">
         <h1>Prijslijst</h1>
-        <a href="#pricelist">Klik hier voor de actuele prijslijst.</a>
+        <a class="open-pricelist" href="#pricelist">Klik hier voor de actuele prijslijst.</a>
     </div>
     <div class="opentimes">
         <h1>Openingstijden</h1>
@@ -78,9 +75,9 @@
                 <object data="email.svg" class="icon" type="image/svg+xml"><!-- Email --></object>
                 <span>info@nagelstudioboxmeer.nl</span>
             </a>
-            <a href="tel:+31612345678" title="Telefoon" class="phone">
+            <a href="tel:+31619522274" title="Telefoon" class="phone">
                 <object data="phone.svg" class="icon" type="image/svg+xml"><!-- Phone --></object>
-                <span>06 12345678</span>
+                <span>06 195 222 74</span>
             </a>
             <a href="https://www.facebook.com/boxmeer.nagelstudio" class="facebook" title="Facebook" target="TOP">
                 <object data="facebook.svg" class="icon" type="image/svg+xml"><!-- Facebook --></object>
@@ -92,7 +89,7 @@
 <!-- popup: https://codepen.io/imprakash/pen/GgNMXO -->
 <div id="pricelist" class="overlay">
 	<div class="popup">
-		<a class="close" href="#">&times;</a>
+		<a class="close-pricelist" href="#">&times;</a>
 		<h1>Nagelstudio<object data="logo.svg" class="logo" type="image/svg+xml"><!-- Logo --></object>Boxmeer</h1>
 	    <center>
 		<div class="list">
@@ -122,6 +119,7 @@
 		            <tr><td>Gellak French</td><td class="price">&euro;25</td><td>Benen</td><td class="price">&euro;35</td></tr>
 		            <tr><td>Gellak verwijderen</td><td class="price">&euro;10</td><td>Oksels</td><td class="price">&euro;20</td></tr>
 		            <tr><th colspan="2">OVERIGE</th></tr>
+		            <tr><td>Kunstnagel verwijderen</td><td class="price">&euro;12</td></tr>
 		            <tr><td>Cadeaubon</td><td class="price">vanaf &euro;15</td></tr>
 		            <tr><td>Steentjes</td><td class="price">vanaf &euro;0,25</td></tr>
 		            <tr><td>Nails art</td><td class="price">vanaf &euro;2</td></tr>
@@ -135,17 +133,29 @@
 </div>
 </body>
 <script type="text/javascript">
+
     $(window).load(function() {
-        //alert ("done");
         $('body').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
             function() {
-                //$('body').css('opacity', '1');
+                $('body').css('opacity', '1');
             }
         );
         $('body').css('-webkit-animation', 'fadein 4s');
         $('body').css('-moz-animation', 'fadein 4s');
         $('body').css('-ms-animation', 'fadein 4s');
         $('body').css('animation', 'fadein 4s');
+        
+        $('.open-pricelist').click(function() {
+            alert('Done!');
+            $('body').css('overflow-y', 'hidden');
+        });
+        
+        $('.close-pricelist').click(function() {
+            $('body').css('overflow-y', 'scroll');
+        });
+        
     });
+    
+
 </script>
 </html>
