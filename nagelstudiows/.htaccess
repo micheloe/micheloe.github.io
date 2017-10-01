@@ -1,0 +1,9 @@
+DirectoryIndex index.html index.php
+
+
+AuthName "Beveiligd gedeelte"
+AuthUserFile /sites/nagelstudioboxmeer.nl/www/.htpasswd
+AuthGroupFile /dev/null
+AuthType Basic
+
+#require valid-user

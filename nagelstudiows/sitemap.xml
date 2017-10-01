@@ -4,27 +4,27 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>//www.nagelstudioboxmeer.nl/</loc>
+	<loc>https://www.nagelstudioboxmeer.nl/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>//www.nagelstudioboxmeer.nl/#Welkom</loc>
+	<loc>https://www.nagelstudioboxmeer.nl/#Welkom</loc>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>//www.nagelstudioboxmeer.nl/#Prijslijst</loc>
+	<loc>https://www.nagelstudioboxmeer.nl/#Prijslijst</loc>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
     <url>
-        <loc>//www.nagelstudioboxmeer.nl/#Openingstijden</loc>
+	<loc>https://www.nagelstudioboxmeer.nl/#Openingstijden</loc>
         <changefreq>monthly</changefreq>
         <priority>0.60</priority>
     </url>
     <url>
-        <loc>//www.nagelstudioboxmeer.nl/#Contact</loc>
+	<loc>https://www.nagelstudioboxmeer.nl/#Contact</loc>
         <changefreq>monthly</changefreq>
         <priority>0.50</priority>
     </url>
