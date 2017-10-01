@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css?v00000003" type="text/css" />
     <link rel="stylesheet" href="animate.css?v00000000" type="text/css" />
-    <link rel="shortcut icon" href="favicon.ico?v00000000" />
+    <link rel="shortcut icon" href="favicon.ico?v00000002" />
     <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -35,7 +35,7 @@
 <div id="content" class="animated bounceInUp">
     <div class="intro">
         <!-- <img src="logo.png" alt="Nagelstudio Boxmeer" /> -->
-        <h1>Welkom!</h1>
+        <h1 id="Welkom">Welkom!</h1>
         <p>
             Nagelstudio Boxmeer is gespecialiseerd in de styling en verzorging van uw nagels.
             Ook kunt U bij ons terecht voor een spa pedicure.
@@ -46,11 +46,11 @@
         </p>
     </div>
     <div class="prices">
-        <h1>Prijslijst</h1>
+        <h1 id="Prijslijst">Prijslijst</h1>
         <a class="open-pricelist" href="#pricelist">Klik hier voor de actuele prijslijst.</a>
     </div>
     <div class="opentimes">
-        <h1>Openingstijden</h1>
+        <h1 id="Openingstijden">Openingstijden</h1>
         <table>
             <tr><td>maandag</td><td>:<td><td>gesloten</td></tr>
             <tr><td>dinsdag</td><td>:<td><td>10:00 - 18:00</td></tr>
@@ -61,7 +61,7 @@
             <tr><td>zondag</td><td>:<td><td>op koopzondagen</td></tr>
         </table>
     </div>
-    <div class="footer">
+    <div id="contact" class="footer">
         <div class="address">
             <table>
             <tr>
@@ -71,7 +71,7 @@
                         Kloostertuin 7<br />
                         5831 JS Boxmeer
                     </a>
-                </div>
+                </td>
             </tr>
             </table>
         </div>
@@ -98,7 +98,6 @@
 	<div class="popup">
 		<a class="close-pricelist" href="#">&times;</a>
 		<h1>Nagelstudio<object data="logo.svg" class="logo" type="image/svg+xml"><!-- Logo --></object>Boxmeer</h1>
-	    <center>
 		<div class="list">
 		    <h2>Prijslijst</h2>
 		    <div class="content">
@@ -137,7 +136,7 @@
 		        -->
 		        <div class="set">
 		            <div class="setrow">
-    		            <div class="hitem" colspan="2">ACRYL NAGELS (zonder lakken)</div>
+    		            <div class="hitem">ACRYL NAGELS (zonder lakken)</div>
 		            </div>
 		            <div class="setrow">
 	    	            <div class="ditem">Nieuwe set</div>
@@ -356,10 +355,8 @@
 	            </div>
 		    </div>
 		</div>
-	    </center>
 	</div>
 </div>
-</body>
 <script type="text/javascript">
 
     $(window).on('load', function() {
@@ -385,4 +382,5 @@
     });  
 
 </script>
+</body>
 </html>

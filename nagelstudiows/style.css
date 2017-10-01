@@ -312,6 +312,7 @@ object.logo svg g path {
 .popup h2 {
     color: #f99;
     font-size: 1.5em;
+    text-align: center;
     line-height: 1;
 	font-weight: 400;
 }
@@ -332,6 +333,7 @@ object.logo svg g path {
 }
 
 .popup .content {
+    margin: auto;        
     max-height: 30%;
     overflow: auto;
     padding-bottom: 2em;
@@ -447,14 +449,14 @@ object.logo svg g path {
     }
     
     #title h1 {
-        font-size: 2.5em;
+        font-size: 2.0em;
     }
 
     .logo {
         float: top;
         margin: 0px;
-        width: 60px;
-        height: 28px;
+        width: 50px;
+        height: 23px;
     }
     
 	#content {
@@ -473,13 +475,13 @@ object.logo svg g path {
     }
 
     .popup h1 {
-        font-size: 2.5em;
+        font-size: 2.0em;
     }
 
     .popup .logo {
         float: top;
-        width: 60px;
-        height: 28px;
+        width: 50px;
+        height: 23px;
     }
 
     .popup h2 {
