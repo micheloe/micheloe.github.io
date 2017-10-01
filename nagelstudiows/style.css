@@ -93,7 +93,8 @@ body {
     overflow-y: auto;
     background-image: url('background.jpg');
     background-attachment: fixed;
-    background-position: center;
+    /* background-position: center; */
+    background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0;
@@ -284,7 +285,6 @@ object.logo svg g path {
 
 .popup {
     margin: 15px auto;
-    padding: 2em auto;
     background: #fff;
     border-radius: 5px;
     width: 45%;
