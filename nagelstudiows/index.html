@@ -329,6 +329,7 @@
     $(window).on('load', function() {
         $('body').one('webkitAnimationEnd oanimationend oAnimationEnd msAnimationEnd animationend',
             function() {
+                $('#pricelist').scrollTop(0);
                 $('body').css('opacity', '1');
             }
         );
