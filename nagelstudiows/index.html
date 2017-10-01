@@ -376,10 +376,11 @@
         });
         
         $('.close-pricelist').click(function() {
+            $('#pricelist').click(function(e){e.stopPropagation();});
             $('body').css('overflow-y', 'scroll');
         });
         
-    });  
+    });
 
 </script>
 </body>
