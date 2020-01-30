@@ -300,10 +300,6 @@ object.logo svg g path {
     color: #333;
 }
 
-.phone {
-    text-decoration: line-through;
-}
-
 .popup .close-pricelist:hover {
     color: #f99;
 }
