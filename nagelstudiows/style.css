@@ -256,109 +256,27 @@ object.logo svg g path {
 
 .popup {
     margin: 15px auto;
-    background: #fff;
     border-radius: 5px;
     width: 45%;
-    position: relative;
+    /* position: relative; */
     padding-top: 2em;
     transition: all 5s ease-in-out;
 }
 
-.popup h1 {
-    font-family: "Playball", cursive;
-    color: #f99;
-    font-size: 4em;
-    text-align: center;
-    background-image: -webkit-linear-gradient(92deg,#ff9999,#cc6666);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 60s infinite linear;
-}
-
-.popup .logo {
-    float: top;
-    width: 120px;
-    height: 45px;
-}
-
-.popup h2 {
-    color: #f99;
-    font-size: 1.5em;
-    text-align: center;
-    line-height: 1;
-	font-weight: 400;
-}
-
 .popup .close-pricelist {
     position: absolute;
-    top: 0%;
+    top: 2%;
     right: 2%;
     transition: all 200ms;
     font-size: 2em;
     font-weight: bold;
     text-decoration: none;
-    color: #333;
+    color: #900;
 }
 
 .popup .close-pricelist:hover {
-    color: #f99;
+    color: #f66;
 }
-
-.popup .content {
-    margin: auto;        
-    max-height: 30%;
-    overflow: auto;
-    padding-bottom: 2em;
-}
-
-#pricelist .popup .list .content  {
-    display: table;
-    line-height: 1.3;
-    width: 90%;
-}
-
-#pricelist .popup .list .content .set {
-    width: 50%;
-}
-
-#pricelist .popup .list .content .set:nth-child(odd) {
-    float: left;
-}
-#pricelist .popup .list .content .set:nth-child(even) {
-    float: right;
-}
-
-#pricelist .popup .list .content .set .setrow {
-    width: 100%;
-}
-
-#pricelist .popup .list .content .set .setrow .hitem {
-    width: 100%;
-    display: table-cell;
-    text-align: left;
-    padding-top: 0.7em;
-    color: #f99;
-}
-
-#pricelist .popup .list .content .set .setrow .ditem {
-    text-align: left;
-    padding-left: 1em;
-}
-
-#pricelist .popup .list .content .set .setrow .sub1 {
-    text-align: left;
-    padding-left: 2em;
-}
-
-#pricelist .popup .list .content .set .setrow .ditem:nth-child(odd) {
-    float: left;
-}
-
-#pricelist .popup .list .content .set .setrow .ditem:nth-child(even) {
-    text-align: right;
-    padding-right: 0.5em;
-}
-
 
 /* Adjusted layout for smaller screens */
 @media screen and (max-height: 768px) {
@@ -383,21 +301,6 @@ object.logo svg g path {
     .popup {
         width: 80%;
     }
-
-    .popup h1 {
-        font-size: 2em;
-    }
-
-    .popup .logo {
-        float: top;
-        width: 50px;
-        height: 23px;
-    }
-
-    .popup h2 {
-        font-size: 1.1em;
-    }
-   
 }
 
 /* Alternative layout for mobile devices */
@@ -419,83 +322,22 @@ object.logo svg g path {
         height: 23px;
     }
     
-	#content {
-	    float: none;
-		position: relative;
-		bottom: auto;
-		left: auto;
-		right: auto;
-		width: 75%;
+    #content {
+        float: none;
+	position: relative;
+	bottom: auto;
+	left: auto;
+	right: auto;
+	width: 75%;
         top: 20%;
-		margin: 1em auto;
-	}
+	margin: 1em auto;
+    }
 	
     .popup {
-        width: 90%;
-    }
-
-    .popup h1 {
-        font-size: 1.7em;
-    }
-
-    .popup .logo {
-        float: top;
-        width: 40px;
-        height: 19px;
-    }
-
-    .popup h2 {
-        font-size: 1.1em;
-    }
-    
-    #pricelist .popup .list .content  {
-        display: table;
-        line-height: 1.3;
-        width: 80%;
-    }
-
-    #pricelist .popup .list .content .set {
-        width: 90%;
-    }
-
-    #pricelist .popup .list .content .set:nth-child(odd) {
-        float: none;
-    }
-    #pricelist .popup .list .content .set:nth-child(even) {
-        float: none;
-    }
-
-    #pricelist .popup .list .content .set {
-        display: table-row;
-    }
-    
-    #pricelist .popup .list .content .set .setrow {
         width: 100%;
     }
 
-    #pricelist .popup .list .content .set .setrow .hitem {
-        font-size: 0.8em;
-        width: 100%;
-        text-align: left;
-        padding-top: 0.7em;
-        color: #f99;
-    }
-
-    #pricelist .popup .list .content .set .setrow .ditem {
-        font-size: 0.8em;
-        text-align: left;
-        padding-left: 1em;
-    }
-
-    #pricelist .popup .list .content .set .setrow .sub1 {
-        padding-left: 2em;
-    }
-
-    #pricelist .popup .list .content .set .setrow .ditem:nth-child(odd) {
-        float: left;
-    }
-
-    #pricelist .popup .list .content .set .setrow .ditem:nth-child(even) {
-        text-align: right;
+    .popup .close-pricelist {
+        top: 1%;
     }
 }
